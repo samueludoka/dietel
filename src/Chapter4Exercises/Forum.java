@@ -1,4 +1,4 @@
-package Assignment;
+package Chapter4Exercises;
 
 public class Forum {
     public static void main(String[] args) {

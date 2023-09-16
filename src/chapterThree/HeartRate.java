@@ -1,27 +1,23 @@
 package chapterThree;
 
-public class HeartRateTest {
+public class HeartRate {
     private String firstName;
     private String lastName;
     private int dayOfBirth;
     private int monthOfBirth;
     private int yearOfBirth;
-    private int maximumHeartRateBeat;
-    private int targetedHeartRate;
-    private  int age;
-    private int calculateTargetedHeartRate;
+    private int maximumHeartRate;
+    private int age;
+    private double targetedHeartRate;
 
-    public void HeartRate (String firstName, String lastName, int dayOfBirth,
-                           int monthOfBirth, int yearOfBirth,
-                           int maximumHeartRateBeat, int targetedHeartRate,int age, int calculateTargetedHeartRate){
-
+    public HeartRate (String firstName, String lastName, int dayOfBirth,int monthOfBirth, int yearOfBirth){
 
         this.firstName = firstName;
         this.lastName = lastName;
         this.dayOfBirth = dayOfBirth;
         this.monthOfBirth = monthOfBirth;
         this.yearOfBirth = yearOfBirth;
-        this.calculateTargetedHeartRate = calculateTargetedHeartRate;
+//        this.targetedHeartRate = targetedHeartRate;
 
 }
 
@@ -55,16 +51,9 @@ public class HeartRateTest {
         return yearOfBirth;
     }
 
-    public int getMaximumHeartRateBeat() {
-        return maximumHeartRateBeat;
+    public int getMaximumHeartRate() {
+        return maximumHeartRate;
     }
-
-    public int getTargetedHeartRate() {
-        return targetedHeartRate;
-    }
-
-
-
 
     public void setDayOfBirth(int dayOfBirth) {
         this.dayOfBirth = dayOfBirth;
@@ -77,29 +66,31 @@ public class HeartRateTest {
     public void setYearOfBirth(int yearOfBirth) {
        this.yearOfBirth = yearOfBirth;
     }
-    public int calculateAge (){
-        int age = 2023 - yearOfBirth;
-        return age;
+
+    public int getAge (){ return age;}
+    public void setAge(int yearOfBirth){
+       age = 2023 - yearOfBirth;
     }
 
-    public void setMaximumHeartRateBeat(int maximumHeartRateBeat) {
-        this.maximumHeartRateBeat = maximumHeartRateBeat;
-    }
-    public int calculateMaximumHeartRateBeat(){
-        int maximumHeartRateBeat = 220 - age;
-        return maximumHeartRateBeat;
+    public void setMaximumHeartRate(int age){
+        maximumHeartRate = 220 - age;
     }
 
-    public void setTargetedHeartRate(int targetedHeartRate) {
-        this.targetedHeartRate = targetedHeartRate;
-    }
-    public int getCalculateTargetedHeartRate(){
-        int restingHeartRate = 70;
-        double intensityOfExercise = 0.60;
-        int heartRateReserved = maximumHeartRateBeat - restingHeartRate;
-        int fds = heartRateReserved  + restingHeartRate;
-        double targetedHeartRate = fds * intensityOfExercise;
-        return (int) targetedHeartRate;
+    public void setTargetedHeartRate(double percentageIntensity) {
+        double targetedHeartRate = (double) (maximumHeartRate * percentageIntensity);
+     if (percentageIntensity >= 0.64 && percentageIntensity <= 0.76) {
+         System.out.printf("\nyour moderate targeted heart intensity is %.2f ", targetedHeartRate);;
+     } else if (percentageIntensity >= 0.77 && percentageIntensity <= 0.93) {
+         System.out.printf("\nYour vigorous targeted heart intensity is%.2f ", targetedHeartRate);
+     }
+
+
+     }
+
+
+
+    public double getTargetedHeartRate(){
+        return targetedHeartRate;
     }
 
 

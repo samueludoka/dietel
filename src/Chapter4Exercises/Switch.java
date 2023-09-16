@@ -1,4 +1,4 @@
-package Assignment;
+package Chapter4Exercises;
 
 import java.util.Scanner;
 

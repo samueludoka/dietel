@@ -1,23 +1,16 @@
-package Assignment;
+package Chapter4Exercises;
+
+
 import java.util.Scanner;
 
-public class numberingDaysOfTheWeek2 {
-    public static void main(String[] args) {
+public class NumberingDaysOfTheWeek {
 
+
+    public static void daysOfTheWeek(){
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter a number: ");
-        int userInput = input.nextInt();
-
-        while (userInput > 6) {
-
-
-            System.out.println("Enter a number: ");
-            userInput = input.nextInt();
-
-        }
-
-
-        switch (userInput) {
+        System.out.println("enter number from o - 6");
+        int num = input.nextInt();
+        switch (num){
             case 0:
                 System.out.println("sunday");
                 break;
@@ -40,9 +33,16 @@ public class numberingDaysOfTheWeek2 {
                 System.out.println("saturday");
                 break;
             default:
-                System.out.println("invalid input");
+               daysOfTheWeek();
 
         }
 
+
+
+
     }
+    public static void main(String[] args) {
+        daysOfTheWeek();
+    }
+
 }
