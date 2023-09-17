@@ -4,15 +4,10 @@ import java.util.Scanner;
 
 public class Factorial {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter a number: ");
-        int num = input.nextInt();
-        int multipy = 1;
-        int sum = 0;
-        for (int count = 1; count < num; count++) {
-            multipy =  num + num * count;
-            sum = sum + multipy;
+        int sum = 1;
+        for (int count = 5; count > 1; count--) {
+            sum = sum * count;
         }
-        System.out.println(sum);
+        System.out.print(sum);
     }
 }

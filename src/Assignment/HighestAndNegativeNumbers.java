@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class HighestAndNegativeNumbers {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter a number");
-        int number = input.nextInt();
+
+        int number = 0;
         int highestNumber = 0;
         int lowestNumber = number;
         for (int lol = 1; lol <= 2; lol++) {
