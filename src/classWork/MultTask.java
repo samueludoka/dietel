@@ -2,31 +2,32 @@ package classWork;
 
 public class MultTask {
     public static void main(String[] args) {
-        multiplication(10,23);
+        multiplication(10, 23);
     }
-    public static int multiplication(int firstNumber,int secondNumber) {
+
+    public static int multiplication(int firstNumber, int secondNumber) {
         int result = 0;
-        for (int count =secondNumber;count >= firstNumber; count++) {
-
-        result -= firstNumber;
-        if(firstNumber == 1){
-            result = secondNumber;
-        } else if (secondNumber == 1) {
-            result = firstNumber;
+        if (secondNumber > 0) {
+            for (int count = 1; count <= secondNumber; count++) {
+                result += firstNumber;
+            }
 
         }
+        else if (secondNumber < 0) {
+            for (int count = 1; count <= firstNumber; count++) {
+                result += secondNumber;
+            }
 
 
         }
-
-
-                
-
-        System.out.println(result);
+        if(firstNumber < 0 && secondNumber < 0){
+            for(int count = 1;count <= -secondNumber;count++){
+                result = result +(-firstNumber);
+            }
+        }
         return result;
 
 
-        }
-
     }
+}
 

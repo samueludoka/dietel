@@ -7,8 +7,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class MultTaskTest {
 @Test
 public void testThtTwoNumbersCanMultiply(){
-    int result = MultTask.multiplication(4,5);
-    assertEquals(20,result);
+    int result = MultTask.multiplication(-5,-5);
+    assertEquals(25,result);
 }
 
 }
