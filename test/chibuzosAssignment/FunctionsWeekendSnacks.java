@@ -80,8 +80,8 @@ public class FunctionsWeekendSnacks {
         }
     }
     public static int factorial(int number){
-        int fact = 5;
-        for (int count = 5; count > number ; count--) {
+        int fact = 1;
+        for (int count = 5; count > 1 ; count--) {
             fact *= count;
 
 

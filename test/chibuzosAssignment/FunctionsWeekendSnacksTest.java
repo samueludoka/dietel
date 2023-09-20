@@ -45,7 +45,7 @@ public void testThatNumberCanReturnPalindrome(){
 @Test
 public void testThatNumberCanReturnFactorial(){
     int result = FunctionsWeekendSnacks.factorial(5);
-    assertEquals(5,result);
+    assertEquals(120,result);
 }
 
 
