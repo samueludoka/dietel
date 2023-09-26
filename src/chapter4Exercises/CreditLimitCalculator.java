@@ -23,7 +23,8 @@ public class CreditLimitCalculator {
             charged += charged;
             credit += credit;
             credit += newBalance;
-            System.out.println("Enter -1 to stop or value other than -1 to continue: ");             count = input.nextInt();
+            System.out.println("Enter -1 to stop or value other than -1 to continue: ");
+            count = input.nextInt();
             index++;
 
         }

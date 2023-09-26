@@ -11,7 +11,7 @@ public class Miles {
 
         System.out.println("Enter the gallons used for all trips, and enter -1 to end");
         int gallon = input.nextInt();
-        int average;
+        int average = 0;
         int totalMiles = 0;
         int totalDallon = 0;
         System.out.println("Enter -1 to stop or value other than -1 to continue: ");
@@ -29,6 +29,8 @@ public class Miles {
             index++;
         }
         average = (totalMiles + totalDallon) / index;
+
+
         System.out.printf("the average miles driven till date is %d",average);
     }
 }

@@ -4,8 +4,8 @@ public class Factorial2 {
 
 
     int fact = 1;
-    int count = 9;
-    for (count = 9; count > 1 ;count --) {
+    int count = 8;
+    for (count = 8; count > 1 ;count --) {
         fact = fact * count;
 
     }
