@@ -7,6 +7,7 @@ public class TwoLargestNumber {
         Scanner input = new Scanner(System.in);
         int largestNumber = 0;
         int secondLargestNumber = 0;
+        int temp = 0;
         for (int count = 0; count < 10; count++) {
             System.out.println("Enter numbers: ");
             int num = input.nextInt();
