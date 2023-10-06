@@ -142,11 +142,7 @@ public class ArrayFunction {
         for(int count = 0;count < scores1.length;count++){
             newArray[value] =  scores1[count];
             value++;
-
-
         }
-
-
         return newArray;
 
     }
