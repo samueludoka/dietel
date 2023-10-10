@@ -1,27 +1,33 @@
 package chapter7Assignment;
 
+
 public class CreditCard1 {
 
-    public static String[] creditCardNumber(String[] cardNumber) {
-        cardNumber = new String[cardNumber.length];
-        String[] cardNumberValue = null;
-        
-        for (int count = 0; count < cardNumber.length; count++) {
-            if (cardNumber.length < 13 || cardNumber.length > 19) {
-                System.out.println("invalid cardNumber");
-            } else {
-                cardNumberValue = new String[cardNumber.length];
+    public static String creditCardNumber(String[] cardNumber) {
+        String result = "";
+        if(cardNumber.length >= 13 && cardNumber.length <= 19){
+            if (Integer.parseInt(cardNumber[0]) == 4){
+                result = "The card is a Visa card";
             }
-            
+            else if(Integer.parseInt(cardNumber[0]) == 5){
+                result = "The card is a MasterCard";
+            } else if (Integer.parseInt(cardNumber[0]) == 3 && Integer.parseInt(cardNumber[1]) == 7) {
+                result = "The card is an American Express Card";
+            } else if (Integer.parseInt(cardNumber[0]) == 6) {
+                result = "Discovery card";
+            }
         }
-        return cardNumberValue;
+        else{
+            result = "Invalid length";
+        }
+        return result;
     }
     public static boolean cardValidate(String[] cardNumber){
         cardNumber = new String[cardNumber.length];
         int evenSum = 0, oddSum = 0, sum = 0;
         int digit = 0;
 
-        for (int count = cardNumber.length -1; count >= 0; count--) {
+        for (int count = cardNumber.length - 1; count >= 0; count--) {
             if (count % 2 == 0) {
                 int multiplyByTwo = digit * 2;
                 if (multiplyByTwo > 9) {
@@ -42,10 +48,9 @@ public class CreditCard1 {
         boolean Sum = true;
 
 
-
         return (sum % 10 == 0);
     }
+
+
 }
 
-
-   

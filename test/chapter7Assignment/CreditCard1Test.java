@@ -8,7 +8,7 @@ class CreditCard1Test {
     @Test
     public void testThatCardNumberIsValid(){
         String[] cardNumber = {"4", "3", "8", "8", "5", "7", "6", "0", "1", "8", "4", "0", "2", "6", "2", "6"};
-        String[] result = CreditCard1.creditCardNumber(cardNumber);
+        String[] result = new String[]{CreditCard1.creditCardNumber(cardNumber)};
         String[] answer = {"4", "3", "8", "8", "5", "7", "6", "0", "1", "8", "4", "0", "2", "6", "2", "6"};
         assertEquals("4",answer[0]);
         assertEquals("3",answer[1]);
@@ -34,6 +34,7 @@ class CreditCard1Test {
         boolean result = CreditCard1.cardValidate(cardNumber);
         assertEquals(answer, result);
 
+    
     }
 
 }
