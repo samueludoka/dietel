@@ -6,22 +6,22 @@ public class CreditCard1 {
     public static String creditCardNumber(String[] cardNumber) {
         String result = "";
         if(cardNumber.length >= 13 && cardNumber.length <= 19){
-            if (Integer.parseInt(cardNumber[0]) == 4){
-                result = "The card is a Visa card";
-            }
-            else if(Integer.parseInt(cardNumber[0]) == 5){
-                result = "The card is a MasterCard";
-            } else if (Integer.parseInt(cardNumber[0]) == 3 && Integer.parseInt(cardNumber[1]) == 7) {
-                result = "The card is an American Express Card";
-            } else if (Integer.parseInt(cardNumber[0]) == 6) {
-                result = "Discovery card";
-            }
+        if (Integer.parseInt(cardNumber[0]) == 4){
+            return "The card is a Visa card";
         }
-        else{
-            result = "Invalid length";
+        else if(Integer.parseInt(cardNumber[0]) == 5){
+            return "The card is a MasterCard";
+        } else if (Integer.parseInt(cardNumber[0]) == 3 && Integer.parseInt(cardNumber[1]) == 7) {
+            return "The card is an American Express Card";
+        } else if (Integer.parseInt(cardNumber[0]) == 6) {
+            return "Discovery card";
         }
-        return result;
     }
+    else{
+        return "Invalid length";
+    }
+    return result;
+}
     public static boolean cardValidate(String[] cardNumber){
         cardNumber = new String[cardNumber.length];
         int evenSum = 0, oddSum = 0, sum = 0;
