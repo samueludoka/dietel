@@ -1,7 +1,7 @@
 package chapter7Assignment;
 
 public class Encrypted {
-    public class CaesarCipher {
+
         public static String encrypt(String plaintext, int shift) {
             StringBuilder encryptedText = new StringBuilder();
 
@@ -26,6 +26,6 @@ public class Encrypted {
             String encryptedText = encrypt(plaintext, shift);
             System.out.println("Encrypted Text: " + encryptedText);
         }
-    }
+
 
 }

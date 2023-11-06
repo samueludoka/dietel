@@ -1,7 +1,6 @@
 package chapter7Assignment;
 
 public class Decrypt {
-    public class CaesarCipher {
         public static String encrypt(String plaintext, int shift) {
             StringBuilder encryptedText = new StringBuilder();
 
@@ -28,4 +27,4 @@ public class Decrypt {
         }
     }
 
-}
+

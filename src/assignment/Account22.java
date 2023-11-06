@@ -1,3 +1,5 @@
+package assignment;
+
 public class Account22 {
     private int balance;
     private int deposit;

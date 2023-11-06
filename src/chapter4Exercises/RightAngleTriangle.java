@@ -8,13 +8,17 @@ public class RightAngleTriangle {
         int base = 0;
         System.out.println("enter triangle base from 1 to 10:");
         base = input.nextInt();
+        if (base > 10) {
+            System.out.println("invalid input");
+        }else{
         for (int i = 0; i < base + 1; i++) {
             System.out.println();
             for (int j = 0; j < i; j++) {
                 System.out.print("* ");
 
             }
-
         }
+        }
+
     }
 }
