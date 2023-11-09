@@ -1,4 +1,4 @@
-package archeryGame;
+package projects.archeryGame;
 
 import org.junit.Test;
 

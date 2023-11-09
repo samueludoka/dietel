@@ -1,6 +1,6 @@
-package archeryGame;
+package projects.archeryGame;
 
-import static archeryGame.ArcheryGame.generateScore;
+import static projects.archeryGame.ArcheryGame.generateScore;
 
 public class Player {
 
