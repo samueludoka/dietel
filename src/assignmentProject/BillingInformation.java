@@ -4,6 +4,13 @@ public class BillingInformation {
     private String name;
     public String recieversPhoneNumber;
 
+    public BillingInformation(String name, String recieversPhoneNumber, String cardInformation, String deliveryAddress){
+        this.name = name;
+        this.recieversPhoneNumber = recieversPhoneNumber;
+        this.cardInformation = cardInformation;
+        this.deliveryAddress = deliveryAddress;
+    }
+
     public String getName() {
         return name;
     }
@@ -39,10 +46,5 @@ public class BillingInformation {
     public String cardInformation;
     public String deliveryAddress;
 
-    public BillingInformation(String name, String recieversPhoneNumber, String cardInformation, String deliveryAddress){
-        this.name = name;
-        this.recieversPhoneNumber = recieversPhoneNumber;
-        this.cardInformation = cardInformation;
-        this.deliveryAddress = deliveryAddress
-    }
+
 }

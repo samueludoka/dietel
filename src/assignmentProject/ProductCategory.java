@@ -3,13 +3,13 @@ package assignmentProject;
 public class ProductCategory {
     public String groceries;
     public String electronics;
-    public String utensiles;
+    public String utensils;
     public String clothings;
 
     public ProductCategory(String groceries, String electronics, String utensils, String clothings){
         this.groceries = groceries;
         this.electronics = electronics;
-        this.utensiles = utensils;
+        this.utensils = utensils;
         this.clothings = clothings;
     }
 
@@ -30,11 +30,11 @@ public class ProductCategory {
     }
 
     public String getUtensiles() {
-        return utensiles;
+        return utensils;
     }
 
     public void setUtensiles(String utensiles) {
-        this.utensiles = utensiles;
+        this.utensils = utensiles;
     }
 
     public String getClothings() {
