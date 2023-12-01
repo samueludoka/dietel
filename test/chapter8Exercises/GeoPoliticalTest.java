@@ -7,12 +7,12 @@ import java.util.Arrays;
 import static org.junit.jupiter.api.Assertions.*;
 
 class GeoPoliticalTest {
-//    @Test
-//    public void testStateGeographicalZone(){
-//        String state = "Imo";
-//        String geographicalZone = "SouthEast";
-//        String result = Arrays.toString(CheckGeoPolitical.geoPoliticalZone(state));
-//        assertSame(result, geographicalZone);
-//    }
+    @Test
+    public void testStateGeographicalZone(){
+        String state = "Enugu";
+        String geographicalZone = "SouthEast";
+        String result = CheckGeoPolitical.geoPoliticalZone(state);
+        assertEquals(result, geographicalZone);
+    }
 
 }
