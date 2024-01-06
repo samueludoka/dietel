@@ -15,6 +15,14 @@ class DiaryTest {
 //        assertFalse(myDiary.isLocked());
     }
     @Test
+    public void diaryIsCreatedAndLocked() throws InvalidPinException {
+        Diary myDiary = new Diary("diaryName", "password");
+        myDiary.createDiary("diary name","password");
+        assertTrue(myDiary.isLocked());
+        myDiary.unlockDiary("password");
+        assertFalse(myDiary.isLocked());
+    }
+    @Test
     public void DiaryISCreatedAndISLocked(){
         Diary myDiary = new Diary("diaryName", "password");
         assertTrue(myDiary.isLocked());

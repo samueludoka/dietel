@@ -13,7 +13,6 @@ public class RemoveDuplicate {
             }
 
         }
-
         int length = countUniqueValues(numbers);
         numbers = stripArray(numbers, length);
         return numbers;

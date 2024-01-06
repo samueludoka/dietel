@@ -5,7 +5,8 @@ import project.diary.exception.InvalidPinException;
 import java.util.Scanner;
 
 public class DiaryMain {
-    static Diary myDiary = new Diary("diaryName", "password");
+    static Diaries myDiaries = new Diaries();
+    static Diary myDiary = new Diary("userName", "password");
 
     public static void main(String[] args) throws InvalidPinException {
         mainMenu();
@@ -36,14 +37,47 @@ public class DiaryMain {
     }
 
     private static void UpdateEntry() {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter Entry id: ");
+        int id = input.nextInt();
+        System.out.println("Enter Entry title: ");
+        String title = input.nextLine();
+        System.out.println("Enter Entry body: ");
+        String body = input.nextLine();
+        myDiary.update(id,title,body);
+        System.out.printf("Entry in %d has been updated to %s, and %s", id,title,body);
+
 
 
     }
 
-    private static void DeleteAnEntry() {
+    private static void DeleteAnEntry() throws InvalidPinException {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter Entry id: ");
+        int id = input.nextInt();
+        myDiary.deleteAnEntry(id);
+        System.out.printf("Entry in line %d has been successfully deleted",id);
+        mainMenu();
+
+
     }
 
-    private static void createEntryInDairy() {
+    private static void createEntryInDairy() throws InvalidPinException {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter Entry title: ");
+        String title = input.nextLine();
+        System.out.println("Enter Entry body: ");
+        String body = input.nextLine();
+        try{
+            myDiary.createAnEntry(title,body);
+            System.out.println("entry created successfully");
+            mainMenu();
+        }
+        catch (InvalidPinException e){
+            System.out.println(e.getMessage());
+            mainMenu();
+        }
+
     }
 
     private static void unlockDiary() throws InvalidPinException {
@@ -53,7 +87,7 @@ public class DiaryMain {
         System.out.println("Enter password: ");
         String password = input.nextLine();
         try {
-            myDiary.unlockDiary(password);
+            myDiaries.unlockDiary(password);
             System.out.println("Diary unlocked successfully");
             mainMenu();
         }
@@ -74,8 +108,8 @@ public class DiaryMain {
         String name = input.nextLine();
         System.out.println("Enter password: ");
         String password = input.nextLine();
-        myDiary.createDiary(name, password);
-        System.out.println("Diary CreatedSuccessfully\n"+"Diary Name is "+name+" and password is "+password);
+        myDiaries.add(name, password);
+        System.out.println("Diary Created Successfully\n"+"Diary Name is "+name+" and password is "+password);
         mainMenu();
     }
 }

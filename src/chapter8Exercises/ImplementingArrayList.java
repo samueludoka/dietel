@@ -3,7 +3,7 @@ package chapter8Exercises;
 public class ImplementingArrayList {
     private int size;
     private boolean isEmpty ;
-    private int[] lists = new int[10];
+    private int[] lists = new int[5];
     
     private int element;
 
@@ -25,21 +25,18 @@ public class ImplementingArrayList {
     }
 
 
-    public int[] remove(int element) {
-        int[] listes = new int[lists.length-1];
+    public int remove(int element) {
+        int listes = 0;
         for (int i = 0; i < lists.length; i++) {
-            if(i == element){
-                continue;
+            if(lists[i] == element){
+                listes = lists[i];
+                break;
             }
-            listes[i] = lists[i];
-
         }
-
-        this.lists = listes;
-        return lists;
+        return listes;
 
     }
-    
+
 
     public void set(int i, int element) {
         int[] num = new int[lists.length];

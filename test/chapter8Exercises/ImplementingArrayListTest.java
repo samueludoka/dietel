@@ -37,8 +37,8 @@ class ImplementingArrayListTest {
         myList.add(50);
         myList.add(20);
         myList.add(3);
-        myList.remove(2);
-        assertFalse(myList.isEmpty());
+        myList.remove(50);
+        assertEquals(50,myList.remove(50));
         System.out.println(myList);
     }
     @Test

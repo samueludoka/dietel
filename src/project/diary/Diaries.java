@@ -32,6 +32,9 @@ public class Diaries {
         }
         return null;
     }
+
+    public void unlockDiary(String password) {
+    }
 }
 
 

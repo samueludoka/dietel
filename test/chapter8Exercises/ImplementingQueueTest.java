@@ -33,8 +33,8 @@ class ImplementingQueueTest {
         myQueue.add(55);
         myQueue.add(20);
         myQueue.add(45);
-        myQueue.remove(23);
-        assertEquals(23, myQueue.remove(23));
+        myQueue.remove(45);
+        assertEquals(45, myQueue.remove(45));
         System.out.println(myQueue);
     }
 

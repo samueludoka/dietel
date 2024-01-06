@@ -42,11 +42,12 @@ public class ImplementingQueue {
 
     public int remove(int element) {
         int response = 0;
-        if (size != 0){
+        if (size != 0) {
             frontOrHead++;
-            response = queue[frontOrHead + 1];
-            size--;
+            response = queue[frontOrHead - 1];
+            size++;
         }
+
         return response;
     }
 //        int[] queues = new int[queue.length];

@@ -50,14 +50,10 @@ public class BankApp {
         System.out.println("enter pin");
         String pin = input.nextLine();
         Account account = gtbBank.createAccountFor(firstName, lastName, pin);
-//        Account account2 = gtbBank.createAccountFor(firstName, lastName, pin);
         System.out.println("Registered Successful\n"+"Account Number is : "+account.getAccountNumber());
         mainMenu();
 
     }
-
-
-
     public static void depositInAccount() {
         Scanner input = new Scanner(System.in);
         System.out.println("enter account number: ");
@@ -93,7 +89,6 @@ public class BankApp {
         }
 
     }
-
     public static void gtbBankTransfer() {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter own account number");
@@ -114,12 +109,10 @@ public class BankApp {
             mainMenu();
         }
     }
-
     public static void checkBalance() {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter pin: ");
         String pin = input.nextLine();
-//        System.out.println(gtbBank.check);
         mainMenu();
     }
 }
