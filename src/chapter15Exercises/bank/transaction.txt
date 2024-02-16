@@ -1,0 +1,6 @@
+
+[Transaction{sender='Isreal', recipient='Delighted', amount='4000'}, Transaction{sender='ope', recipient='Delighted', amount='4000'}, Transaction{sender='Tobi', recipient='ope', amount='5000'}]
+[Transaction{sender='Isreal', recipient='Delighted', amount='4000'}, Transaction{sender='ope', recipient='Delighted', amount='4000'}, Transaction{sender='Tobi', recipient='ope', amount='5000'}]
+[Transaction{sender='Isreal', recipient='Delighted', amount='4000'}, Transaction{sender='ope', recipient='Delighted', amount='4000'}, Transaction{sender='Tobi', recipient='ope', amount='5000'}]
+[Transaction{sender='Isreal', recipient='Delighted', amount='4000'}, Transaction{sender='ope', recipient='Delighted', amount='4000'}, Transaction{sender='Tobi', recipient='ope', amount='5000'}]
+[Transaction{sender='Isreal', recipient='Delighted', amount='4000'}, Transaction{sender='ope', recipient='Delighted', amount='4000'}, Transaction{sender='Tobi', recipient='ope', amount='5000'}]

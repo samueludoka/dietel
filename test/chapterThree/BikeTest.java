@@ -16,7 +16,7 @@ class BikeTest {
     @Test
     public void testThatBikeCanTurnOn() {
         // i have a bike
-        Bike suzuki = new Bike();
+        chapterThree.Bike suzuki = new chapterThree.Bike();
         //when i turn it on
         suzuki.turnOn();
         assertTrue(suzuki.getTurnOn());
