@@ -1,6 +1,8 @@
 package chapter15Exercises.bank;
 
-public class Transaction {
+import java.io.Serializable;
+
+public class Transaction implements Serializable {
     private String sender;
 
     public Transaction(String sender, String recipient, String amount) {

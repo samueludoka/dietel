@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class Example1 {
     public static void main(String[] args){
-        String fileLocation = "C:\\Users\\Samuel\\IdeaProjects\\sammysWork\\src\\chapter15Exercises\\byteBased\\txtExercis";
+        String fileLocation = "C:\\Users\\Samuel\\IdeaProjects\\sammysWork\\src\\chapter15Exercises\\byteBased\\txtExercise";
         try(FileInputStream fileInputStream = new FileInputStream(fileLocation)){
             byte[] b = fileInputStream.readNBytes(10);
             System.out.println(new String(b));
