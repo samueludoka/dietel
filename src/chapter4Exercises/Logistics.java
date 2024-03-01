@@ -5,7 +5,7 @@ public class Logistics {
         Logistics(65,5000);
 
     }
-public static int Logistics(int numberOfDelivery, int basePay){
+    public static int Logistics(int numberOfDelivery, int basePay){
         int result = 0;
         if(numberOfDelivery < 50) {
             result = numberOfDelivery * 160 + basePay;
