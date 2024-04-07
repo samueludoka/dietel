@@ -9,13 +9,13 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.testng.internal.Utils.arrayToString;
 
 class HcfTest {
-//    @Test
-//    public void testFactorsInAnArray(){
-//        int[] score = {8,4,12};
-//        int[] answer = {2,2};
-//        Integer[] result = Hcf.hcf(score);
-//        System.out.println(Arrays.toString(result));
-//        assertArrayEquals(answer,result);
-//    }
+    @Test
+    public void testFactorsInAnArray(){
+        int[] score = {8,4,12};
+        int[] answer = {2,2};
+        Integer[] result = Hcf.hcf(score);
+        System.out.println(Arrays.toString(result));
+        assertEquals(answer,result);
+    }
 
 }

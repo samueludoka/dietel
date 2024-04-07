@@ -44,10 +44,6 @@ public class Account {
         if (!this.pin.equals(pin)) throw new WrongPinException("Wrong pin");
     }
 
-//    public int checkBalanceWithPin(String pinIsCorrect) throws WrongPinException {
-//        if(pin.equals(pinIsCorrect)) return balance;
-//        else throw new WrongPinException("orodo your pin is wrong");
-//    }
 
     public void withdraw(int amount) {
         checkAmount(amount);
