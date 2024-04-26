@@ -2,7 +2,7 @@ package chapter7Assignment;
 
 import java.util.Arrays;
 
-public class ArrayFunction {
+public class  ArrayFunction {
 
     public static void main(String[] args) {
         int[] integar = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
