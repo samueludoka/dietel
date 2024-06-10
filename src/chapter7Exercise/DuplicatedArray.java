@@ -85,5 +85,27 @@ public class DuplicatedArray {
         }
        return numb;
     }
+    public static int removeDuplicate(int[] scores){
+        for (int count = 0; count < scores.length; count++) {
+            for (int counter = 0; counter < scores.length; counter++) {
+                if(scores[count] == scores[counter] && scores[count] != scores[counter]){
+                    scores[count] = 0;
+                    scores[counter] = 0;
+
+                }
+
+            }
+
+        }
+        return uniqueValues(scores);
+    }
+
+    private static int uniqueValues(int[] scores) {
+        for (int index = 0; index < scores.length; index++) {
+            if(scores[index] != 0) return scores[index];
+
+        }
+        return 0;
+    }
 
 }

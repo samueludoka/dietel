@@ -85,4 +85,11 @@ class DuplicatedArrayTest {
         int[] result = DuplicatedArray.doubleArray(score1,score2);
         assertArrayEquals(ans, result);
     }
+    @Test
+    public void testAnotherDuplicate(){
+        int[]score = {4,3,3,4,7};
+        int result = 4;
+        int answer = DuplicatedArray.removeDuplicate(score);
+        assertEquals(result,answer);
+    }
 }
